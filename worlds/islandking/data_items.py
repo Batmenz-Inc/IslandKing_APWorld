@@ -1,0 +1,59 @@
+from BaseClasses import Item, ItemClassification
+from .constants import *
+
+
+
+path_unlocks = {
+    "Town Center": {
+        ITEM_ID_KEY: 1001,
+        ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
+    },
+    "The Button": {
+        ITEM_ID_KEY: 1002,
+        ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
+    }
+}
+
+path_progress = {
+    "Unlock Backyard": {
+        ITEM_ID_KEY: 2001,
+        ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
+    },
+    "Unlock Basement": {
+        ITEM_ID_KEY: 2002,
+        ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
+    },
+    "Expansion Islands": {
+        ITEM_ID_KEY: 2003,
+        ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
+    },
+    "Farming Island": {
+        ITEM_ID_KEY: 2004,
+        ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
+    },
+    "Fortified Island": {
+        ITEM_ID_KEY: 2005,
+        ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
+    },
+    "Mysterious Island": {
+        ITEM_ID_KEY: 2006,
+        ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
+    },
+}
+
+player_progress_unlock = {
+    "Shop Unlock": {
+        ITEM_ID_KEY: 5001,
+        ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
+    },
+    "Shop Unlock (King)": {
+        ITEM_ID_KEY: 5001,
+        ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
+    },
+    # "Housing": {
+    #     ITEM_ID_KEY: 5003,
+    #     ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.useful
+    # },
+}
+
+all_items = path_unlocks | path_progress | player_progress_unlock
