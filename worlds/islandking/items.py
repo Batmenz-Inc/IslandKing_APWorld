@@ -26,15 +26,15 @@ DEFAULT_ITEM_CLASSIFICATIONS = {
 class IslandKingItem(Item):
     game: str = "Island King"
 
-def get_random_filler_item_name(world: IslandKingWorld) -> str:
+def get_random_filler_item_name(world: "IslandKingWorld") -> str:
     return "Nothing"
 
-def create_item_with_correct_classification(world: IslandKingWorld, name: str) -> IslandKingItem:
+def create_item_with_correct_classification(world: "IslandKingWorld", name: str) -> IslandKingItem:
     classification = DEFAULT_ITEM_CLASSIFICATIONS[name]
     return IslandKingItem(name, classification, ITEM_NAME_TO_ID[name], world.player)
 
 # Create the items For the world
-def create_all_items(world: IslandKingWorld) -> None:
+def create_all_items(world: "IslandKingWorld") -> None:
 
     itempool: list[Item] = []
     to_precollect: list[Item] = []

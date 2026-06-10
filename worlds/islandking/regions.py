@@ -7,7 +7,7 @@ from rule_builder.rules import *
 if TYPE_CHECKING:
     from .world import IslandKingWorld
 
-def create_and_connect_regions(world: IslandKingWorld) -> None:
+def create_and_connect_regions(world: "IslandKingWorld") -> None:
     ##################
     # CREATE REGIONS #
     ##################

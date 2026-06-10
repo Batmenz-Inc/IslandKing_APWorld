@@ -77,7 +77,7 @@ class IslandKingOptions(PerGameCommonOptions):
     # Extra item options.
     filler_item_distribution: FillerItemDistribution
 
-    deathlink = DeathLink
+    deathlink: DeathLink
 
-    goal_type = GoalType
-    goal_endings = GoalEndings
+    goal_type: GoalType
+    goal_endings: GoalEndings

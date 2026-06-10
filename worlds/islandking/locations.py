@@ -1,7 +1,6 @@
 
 from typing import TYPE_CHECKING, List, Optional
 from BaseClasses import CollectionState, ItemClassification, Location, LocationProgressType, Region, Region
-from worlds.islandking import IslandKingWorld
 from .constants import *
 from .data_locations import all_locations
 
@@ -18,7 +17,7 @@ class IslandKingLocation(Location):
 def get_location_names_with_ids(location_names: list[str]) -> dict[str, int | None]:
     return {location_name: LOCATION_NAME_TO_ID[location_name] for location_name in location_names}
 
-def create_all_locations(world: IslandKingWorld) -> None:
+def create_all_locations(world: "IslandKingWorld") -> None:
     
     for location_name, location_data in all_locations.items():
         locs = get_location_names_with_ids([location_name])
