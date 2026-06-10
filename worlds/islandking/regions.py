@@ -19,6 +19,8 @@ def create_and_connect_regions(world: IslandKingWorld) -> None:
     backyard = Region("Backyard", world.player, world.multiworld)
     basement = Region("Basement", world.player, world.multiworld)
     town_center = Region("Town Center", world.player, world.multiworld)
+    intensive_research = Region("Intensive Research", world.player, world.multiworld)
+    the_button = Region("The Button", world.player, world.multiworld)
 
     regions = [
         castle,
@@ -27,7 +29,9 @@ def create_and_connect_regions(world: IslandKingWorld) -> None:
         town_shop,
         backyard,
         basement,
-        town_center
+        town_center,
+        intensive_research,
+        the_button
     ]
 
     world.multiworld.regions += regions
@@ -37,8 +41,10 @@ def create_and_connect_regions(world: IslandKingWorld) -> None:
     ###################
 
     castle.connect(main_island)
-    main_island.connect(town_shop, "Open Shop", Has("Town Shop"))
+    main_island.connect(town_shop, "Open Shop", Has("Open Shop") | Has("Open Shop (King)"))
     castle.connect(economics_room, "Economics Room", Has("Economics Room"))
     castle.connect(backyard, "Castle Backyard Door", Has("Unlock Backyard"))
     backyard.connect(basement, "Backyard Basement Door", Has("Unlock Basement"))
     basement.connect(town_center, "Town Center Upgrade", Has("Town Center Upgrade"))
+    town_center.connect(intensive_research, "Intensive Research", Has("Intensive Research"))
+    town_center.connect(the_button, "The Button", Has("The Button"))

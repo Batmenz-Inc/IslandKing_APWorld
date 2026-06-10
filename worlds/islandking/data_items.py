@@ -23,20 +23,24 @@ path_progress = {
         ITEM_ID_KEY: 2002,
         ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
     },
-    "Expansion Islands": {
+    "Intensive Research": {
         ITEM_ID_KEY: 2003,
         ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
     },
-    "Farming Island": {
+    "Expansion Islands": {
         ITEM_ID_KEY: 2004,
         ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
     },
-    "Fortified Island": {
+    "Farming Island": {
         ITEM_ID_KEY: 2005,
         ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
     },
-    "Mysterious Island": {
+    "Fortified Island": {
         ITEM_ID_KEY: 2006,
+        ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
+    },
+    "Mysterious Island": {
+        ITEM_ID_KEY: 2007,
         ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
     },
 }
@@ -47,7 +51,7 @@ player_progress_unlock = {
         ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
     },
     "Shop Unlock (King)": {
-        ITEM_ID_KEY: 5001,
+        ITEM_ID_KEY: 5002,
         ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
     },
     # "Housing": {

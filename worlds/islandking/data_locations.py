@@ -50,8 +50,44 @@ main_island_upgrades = {
     }
 }
 
+urban_upgrades = {
+    "Crop Fertilizer": {
+        LOCATION_ID_KEY: 3001,
+        LOCATION_PARENT_REGION_KEY: "Town Center",
+    },
+    "Faster Processing": {
+        LOCATION_ID_KEY: 3002,
+        LOCATION_PARENT_REGION_KEY: "Town Center",
+    },
+    "Intensive Research": {
+        LOCATION_ID_KEY: 3003,
+        LOCATION_PARENT_REGION_KEY: "Town Center",
+    },
+    "Significantly Cropier Crops": {
+        LOCATION_ID_KEY: 3004,
+        LOCATION_PARENT_REGION_KEY: "Town Center",
+    },
+    "Extreme Economy": {
+        LOCATION_ID_KEY: 3005,
+        LOCATION_PARENT_REGION_KEY: "Intensive Research",
+    },
+    "Better Return Rates": {
+        LOCATION_ID_KEY: 3006,
+        LOCATION_PARENT_REGION_KEY: "Intensive Research",
+    },
+    "Crop Harvesting Technology": {
+        LOCATION_ID_KEY: 3007,
+        LOCATION_PARENT_REGION_KEY: "Intensive Research",
+    },
+    "The Button": {
+        LOCATION_ID_KEY: 3008,
+        LOCATION_PARENT_REGION_KEY: "Town Center",
+        LOCATION_RULE_KEY: Has("The Button")
+    },
+}
+
 town_shop = {
 
 }
 
-all_locations = castle_upgrades | main_island_upgrades | town_shop
+all_locations = castle_upgrades | main_island_upgrades | urban_upgrades | town_shop
