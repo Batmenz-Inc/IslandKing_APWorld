@@ -3,6 +3,7 @@ from typing import Any, List, Set
 # Imports of base Archipelago modules must be absolute.
 from BaseClasses import Item, Location
 from worlds.AutoWorld import World
+from rule_builder.rules import *
 
 class IslandKingWorld(World):
     """
@@ -33,7 +34,7 @@ class IslandKingWorld(World):
         pass
 
     def set_rules(self) -> None:
-        pass
+        self.set_completion_rule(CanReachLocation("The Grand Finale", "Mysterious Island")) # true urban win condition
 
     def create_items(self) -> None:
         pass

@@ -27,20 +27,24 @@ path_progress = {
         ITEM_ID_KEY: 2003,
         ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
     },
-    "Expansion Islands": {
+    "Bigger Bunker": {
         ITEM_ID_KEY: 2004,
         ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
     },
-    "Farming Island": {
+    "Expansion Island": {
         ITEM_ID_KEY: 2005,
         ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
     },
-    "Fortified Island": {
+    "Farming Island": {
         ITEM_ID_KEY: 2006,
         ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
     },
-    "Mysterious Island": {
+    "Fortified Island": {
         ITEM_ID_KEY: 2007,
+        ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
+    },
+    "Mysterious Island": {
+        ITEM_ID_KEY: 2008,
         ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
     },
 }
