@@ -22,7 +22,7 @@ class FillerItemDistribution(OptionCounter):
     max = 100
 
     default = {
-        "nothing": 50,
+        "50 Coins": 50,
     }
 
     valid_keys = default.keys()
@@ -44,7 +44,7 @@ class GoalType(Choice):
 
     This selection determines what goal the player needs to aim for.
 
-    - **count:** Complete GoalEnding number of unique endings
+    - **count:** Complete GoalEnding number of unique endings [Not Implemented]
     - **urban:** Complete any urban ending once
     - **true_urban:** Complete true urban ending once
 
@@ -57,7 +57,7 @@ class GoalType(Choice):
     option_urban = 1
     option_true_urban = 2
 
-    default = 0
+    default = 2
 
 class GoalEndings(Range):
     """
@@ -69,6 +69,8 @@ class GoalEndings(Range):
     range_start = 1
     range_end = 9
     default = 1
+
+    visibility = Visibility.none
 
 # We must now define a dataclass inheriting from PerGameCommonOptions that we put all our options in.
 # This is in the format "option_name_in_snake_case: OptionClassName".

@@ -2,7 +2,6 @@ from BaseClasses import Item, ItemClassification
 from .constants import *
 
 
-
 path_unlocks = {
     "Town Center": {
         ITEM_ID_KEY: 1001,
@@ -64,4 +63,11 @@ player_progress_unlock = {
     # },
 }
 
-all_items = path_unlocks | path_progress | player_progress_unlock
+general_upgrades = {
+    "Economics Room": {
+        ITEM_ID_KEY: 6001,
+        ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
+    }
+}
+
+all_items = general_upgrades | path_unlocks | path_progress | player_progress_unlock

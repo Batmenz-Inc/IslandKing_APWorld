@@ -10,14 +10,14 @@ if TYPE_CHECKING:
     from .world import IslandKingWorld
 
 ITEM_NAME_TO_ID = {
-    "Nothing": 1,
+    "50 Coins": 1,
 
 } | {
     k: v[ITEM_ID_KEY] for k, v in all_items.items()
 }
 
 DEFAULT_ITEM_CLASSIFICATIONS = {
-    "Nothing": ItemClassification.filler,
+    "50 Coins": ItemClassification.filler,
 
 } | {
     k: v[ITEM_ITEM_CLASSIFICATION_KEY] for k, v in all_items.items()
@@ -27,7 +27,7 @@ class IslandKingItem(Item):
     game: str = "Island King"
 
 def get_random_filler_item_name(world: "IslandKingWorld") -> str:
-    return "Nothing"
+    return "50 Coins"
 
 def create_item_with_correct_classification(world: "IslandKingWorld", name: str) -> IslandKingItem:
     classification = DEFAULT_ITEM_CLASSIFICATIONS[name]

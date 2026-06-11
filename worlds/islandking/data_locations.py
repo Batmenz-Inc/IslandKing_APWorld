@@ -21,7 +21,7 @@ castle_upgrades = {
     "Town Center Upgrade": {
         LOCATION_ID_KEY: 1004,
         LOCATION_PARENT_REGION_KEY: "Basement",
-        LOCATION_RULE_KEY: Has("Town Center Upgrade")
+        LOCATION_RULE_KEY: Has("Town Center")
     },
     "Faster Money Generation": {
         LOCATION_ID_KEY: 1005,
@@ -37,12 +37,12 @@ main_island_upgrades = {
     "Open Shop": {
         LOCATION_ID_KEY: 2001,
         LOCATION_PARENT_REGION_KEY: "Main Island",
-        LOCATION_RULE_KEY: Has("Open Shop")
+        LOCATION_RULE_KEY: Has("Shop Unlock")
     },
     "Open Shop (King)": {
         LOCATION_ID_KEY: 2002,
         LOCATION_PARENT_REGION_KEY: "Main Island",
-        LOCATION_RULE_KEY: Has("Open Shop (King)")
+        LOCATION_RULE_KEY: Has("Shop Unlock (King)")
     },
     "Faster Crop Spawn Rate": {
         LOCATION_ID_KEY: 2003,
@@ -62,6 +62,7 @@ urban_upgrades = {
     "Intensive Research": {
         LOCATION_ID_KEY: 3003,
         LOCATION_PARENT_REGION_KEY: "Town Center",
+        LOCATION_RULE_KEY: Has("Intensive Research")
     },
     "Significantly Cropier Crops": {
         LOCATION_ID_KEY: 3004,
@@ -107,56 +108,61 @@ true_urban_upgrades = {
         LOCATION_ID_KEY: 4005,
         LOCATION_PARENT_REGION_KEY: "The Button",
     },
-    "Expansion Island": {
+    "Bigger Bunker": {
         LOCATION_ID_KEY: 4006,
         LOCATION_PARENT_REGION_KEY: "The Button",
+        LOCATION_RULE_KEY: Has("Bigger Bunker")
+    },
+    "Expansion Island": {
+        LOCATION_ID_KEY: 4007,
+        LOCATION_PARENT_REGION_KEY: "Bigger Bunker",
         LOCATION_RULE_KEY: Has("Expansion Island")
     },
     "Morale Boost": {
-        LOCATION_ID_KEY: 4007,
-        LOCATION_PARENT_REGION_KEY: "Expansion Island",
-    },
-    "Lower Shipping Taxes": {
         LOCATION_ID_KEY: 4008,
         LOCATION_PARENT_REGION_KEY: "Expansion Island",
     },
-    "Even Better Harvesting": {
+    "Lower Shipping Taxes": {
         LOCATION_ID_KEY: 4009,
         LOCATION_PARENT_REGION_KEY: "Expansion Island",
     },
-    "Faster Selling": {
+    "Even Better Harvesting": {
         LOCATION_ID_KEY: 4010,
         LOCATION_PARENT_REGION_KEY: "Expansion Island",
     },
-    "Farming Island": {
+    "Faster Selling": {
         LOCATION_ID_KEY: 4011,
+        LOCATION_PARENT_REGION_KEY: "Expansion Island",
+    },
+    "Farming Island": {
+        LOCATION_ID_KEY: 4012,
         LOCATION_PARENT_REGION_KEY: "Expansion Island",
         LOCATION_RULE_KEY: Has("Farming Island")
     },
-    "Deluxe Sky Farm": {
-        LOCATION_ID_KEY: 4012,
-        LOCATION_PARENT_REGION_KEY: "Farming Island",
-    },
-    "Quality Control": {
+    "Deluxe Farm": {
         LOCATION_ID_KEY: 4013,
         LOCATION_PARENT_REGION_KEY: "Farming Island",
     },
-    "Better Filters": {
+    "Quality Control": {
         LOCATION_ID_KEY: 4014,
         LOCATION_PARENT_REGION_KEY: "Farming Island",
     },
-    "Fortified Island": {
+    "Better Filters": {
         LOCATION_ID_KEY: 4015,
+        LOCATION_PARENT_REGION_KEY: "Farming Island",
+    },
+    "Fortified Island": {
+        LOCATION_ID_KEY: 4016,
         LOCATION_PARENT_REGION_KEY: "Expansion Island",
         LOCATION_RULE_KEY: Has("Fortified Island")
     },
     "Mysterious Island": {
-        LOCATION_ID_KEY: 4016,
+        LOCATION_ID_KEY: 4017,
         LOCATION_PARENT_REGION_KEY: "Expansion Island",
         LOCATION_RULE_KEY: Has("Mysterious Island")
     },
     "The Grand Finale": {
-        LOCATION_ID_KEY: 4017,
+        LOCATION_ID_KEY: 4018,
         LOCATION_PARENT_REGION_KEY: "Mysterious Island",
     },
 }

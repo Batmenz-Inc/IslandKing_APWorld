@@ -22,4 +22,6 @@ def create_all_locations(world: "IslandKingWorld") -> None:
     for location_name, location_data in all_locations.items():
         locs = get_location_names_with_ids([location_name])
         world.get_region(location_data[LOCATION_PARENT_REGION_KEY]).add_locations(locs, IslandKingLocation)
-        world.set_rule(world.get_location(location_name), location_data[LOCATION_RULE_KEY])
+
+        if LOCATION_RULE_KEY in location_data:
+            world.set_rule(world.get_location(location_name), location_data[LOCATION_RULE_KEY])
