@@ -62,6 +62,7 @@ class IslandKingWorld(World):
         # If you need access to the player's chosen options on the client side, there is a helper for that.
         slot_data = self.options.as_dict(
             "deathlink",
+            "ringlink",
             "goal_type",
             "goal_endings"
         )

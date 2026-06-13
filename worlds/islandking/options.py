@@ -27,6 +27,17 @@ class FillerItemDistribution(OptionCounter):
 
     valid_keys = default.keys()
 
+class RingLink(Toggle):
+    """
+    Toggles Ring Link
+    """
+
+    display_name = "Ring Link"
+
+    default = False
+
+    visibility = Visibility.all
+
 class DeathLink(Toggle):
     """
     Toggles Deathlink
@@ -80,6 +91,7 @@ class IslandKingOptions(PerGameCommonOptions):
     filler_item_distribution: FillerItemDistribution
 
     deathlink: DeathLink
+    ringlink: RingLink
 
     goal_type: GoalType
     goal_endings: GoalEndings
