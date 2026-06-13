@@ -51,11 +51,11 @@ def create_and_connect_regions(world: "IslandKingWorld") -> None:
     ###################
 
     castle.connect(main_island)
-    main_island.connect(town_shop, "Open Shop", Or(Has("Shop Unlock"), Has("Shop Unlock (King)")))
+    main_island.connect(town_shop, "Open Shop", Or(Has("Open Shop"), Has("Open Shop (King)")))
     castle.connect(economics_room, "Economics Room", Has("Economics Room"))
     castle.connect(backyard, "Castle Backyard Door", Has("Unlock Backyard"))
     backyard.connect(basement, "Backyard Basement Door", Has("Unlock Basement"))
-    basement.connect(town_center, "Town Center Upgrade", Has("Town Center"))
+    basement.connect(town_center, "Town Center Upgrade", Has("Town Center Upgrade"))
     town_center.connect(intensive_research, "Intensive Research", Has("Intensive Research"))
     town_center.connect(the_button, "The Button", Has("The Button"))
     the_button.connect(bigger_bunker, "Bigger Bunker", Has("Bigger Bunker"))

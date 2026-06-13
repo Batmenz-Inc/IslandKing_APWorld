@@ -21,7 +21,7 @@ castle_upgrades = {
     "Town Center Upgrade": {
         LOCATION_ID_KEY: 1004,
         LOCATION_PARENT_REGION_KEY: "Basement",
-        LOCATION_RULE_KEY: Has("Town Center")
+        LOCATION_RULE_KEY: Has("Town Center Upgrade")
     },
     "Faster Money Generation": {
         LOCATION_ID_KEY: 1005,
@@ -37,12 +37,12 @@ main_island_upgrades = {
     "Open Shop": {
         LOCATION_ID_KEY: 2001,
         LOCATION_PARENT_REGION_KEY: "Main Island",
-        LOCATION_RULE_KEY: Has("Shop Unlock")
+        LOCATION_RULE_KEY: Has("Open Shop")
     },
     "Open Shop (King)": {
         LOCATION_ID_KEY: 2002,
         LOCATION_PARENT_REGION_KEY: "Main Island",
-        LOCATION_RULE_KEY: Has("Shop Unlock (King)")
+        LOCATION_RULE_KEY: Has("Open Shop (King)")
     },
     "Faster Crop Spawn Rate": {
         LOCATION_ID_KEY: 2003,

@@ -3,7 +3,7 @@ from .constants import *
 
 
 path_unlocks = {
-    "Town Center": {
+    "Town Center Upgrade": {
         ITEM_ID_KEY: 1001,
         ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
     },
@@ -49,11 +49,11 @@ path_progress = {
 }
 
 player_progress_unlock = {
-    "Shop Unlock": {
+    "Open Shop": {
         ITEM_ID_KEY: 5001,
         ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
     },
-    "Shop Unlock (King)": {
+    "Open Shop (King)": {
         ITEM_ID_KEY: 5002,
         ITEM_ITEM_CLASSIFICATION_KEY: ItemClassification.progression
     },
